@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Edit Guy</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.rtl.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-flags.rtl.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-payments.rtl.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/tabler-vendors.rtl.min.css?1684106062" rel="stylesheet" />
+    <link href="./dist/css/demo.rtl.min.css?1684106062" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap');
+
+        :root,
+        body {
+
+            font-family: "Noto Sans Hebrew", sans-serif;
+        }
+
+        .form-label {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: right;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 89px;
+            border-radius: 20px;
+            text-align: right;
+            background-color: #E4E4E4;
+
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+        .wrapped-input {
+            width: 100%;
+            border-radius: 20px;
+            text-align: right;
+            background-color: #E4E4E4;
+        }
+
+        kbd {
+            font-family: "Noto Sans Hebrew", sans-serif;
+            padding: 1rem 1rem;
+            width: 400px;
+            height: 54px;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 34px;
+            text-align: right;
+        }
+
+        .btn {
+            height: 89px;
+            top: 643px;
+            left: 66px;
+            padding: 27px, 357px, 28px, 218px;
+            border-radius: 20px;
+            font-size: 25px;
+            font-weight: 900;
+            text-align: right;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            background-color: #E4E4E4;
+            border: none;
+            /* Set the desired border color when focused */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-dark pt-5 pb-5">
+        <h1 class="text-white text-center" style="font-size: 50px; font-weight: 900;">+ הוספת בחור חדש </h1>
+    </div>
+    <div class="container-fluid">
+        <div class="container mt-5 d-flex flex-column gap-5">
+
+            <div class="row">
+
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">כתובת מייל </label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">מספר טלפון</label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">שם פרטי ומשפחה</label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">כתובת </label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">מספר תעודת זהות </label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+                <div class="mb-3 col-xl-4">
+                    <label class="form-label">שיעור</label>
+                    <input type="text" class="form-control" name="example-text-input">
+                </div>
+            </div>
+            <div class="row">
+                <label class="form-label">שיוך מספר כרטיס מגנטי</label>
+
+                <div class="wrapped-input mb-3 row align-items-center">
+                    <div class="col-auto">
+                        <kbd>לחץ להעברת כרטיס מגנטי לשיוך</kbd>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" style="border: none;" name="example-text-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-center">
+                <div class="mb-3 col-xl-6">
+                    <a href="#" class=" w-100 btn btn-dark">← מחיקת הבחור מהמערכת </a>
+
+                </div>
+                <div class="mb-3 col-xl-6">
+                    <a href="#" class=" w-100 btn btn-danger">← לעדכון פרטי הבחור לחץ כאן</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
