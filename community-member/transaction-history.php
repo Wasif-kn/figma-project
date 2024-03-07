@@ -28,17 +28,17 @@
       }
 
       .ts-price {
-        width: 15%;
+        width: 25%;
       }
 
       .ts-date {
-        width: 15%;
+        width: 25%;
       }
       .ts-product {
-        width: 15%;
+        width: 25%;
       }
       .ts-store-name {
-        width: 15%;
+        width: 25%;
       }
       .ts-text {
         text-align: right;
@@ -48,7 +48,7 @@
       .navbar {
         background: #e4e4e4;
       }
-      @media screen and (max-width: 775px) {
+      /* @media screen and (max-width: 775px) {
         .ts-price {
           width: 110px;
         }
@@ -62,6 +62,20 @@
         .ts-store-name {
           width: 310px;
         }
+      } */
+
+      
+        /* resonsive  */
+
+        .community-member-transaction-history-table tr {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width: 775px) {
+        tr {
+          width: 875px;
+        }
       }
     </style>
 
@@ -69,7 +83,7 @@
       
       <div class="container col-12 mt-5">
         <div class="card-x mt-3">
-          <div style="overflow-x: auto">
+          <div class="community-member-transaction-history-table" style="overflow-x: auto; direction: rtl; ">
             <table class="table table-vcenter card-table">
               <tbody class="d-flex flex-column ts-text">
                 <tr>

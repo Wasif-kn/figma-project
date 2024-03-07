@@ -37,9 +37,7 @@
         font-size: 20px;
         font-weight: 600;
       }
-      .navbar {
-        background: #e4e4e4;
-      }
+     
       @media screen and (max-width: 775px) {
         .ts-price {
           width: 110px;

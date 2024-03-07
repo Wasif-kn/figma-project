@@ -23,10 +23,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap');
 
+
+
         :root,
         body {
 
             font-family: "Noto Sans Hebrew", sans-serif;
+
         }
 
         .bg {
@@ -34,6 +37,9 @@
 
         }
 
+        .navbar-expand-lg.navbar-vertical.navbar-right~.navbar, .navbar-expand-lg.navbar-vertical.navbar-right~.page-wrapper{
+    margin-right: 20% !important;
+        }
         .side-nav-item {
             /* border: 1px solid #ccc; */
             border-radius: 10px;
@@ -89,6 +95,8 @@
             font-weight: 900;
         }
 
+
+
         @media (min-width: 992px) {
             .md-w {
                 width: 80%;
@@ -100,6 +108,9 @@
                 background-color: #EFEFEF !important;
             }
 
+            .user-welcome{
+                font-size: 16px;
+            }
         }
 
         @media (max-width: 991px) {
@@ -113,6 +124,15 @@
             .md-w {
                 top: -60px !important;
                 position: relative;
+            }
+
+            .store-manager-header-bottombar{
+                flex-direction: column;
+    align-items: flex-end !important;
+            }
+
+            .nav-link{
+                background-color: 
             }
         }
 
@@ -131,6 +151,12 @@
             letter-spacing: 0em;
             text-align: right;
             margin: 0;
+        }
+
+
+        .offcanvas.show:not(.hiding), .offcanvas.showing{
+            padding-top: 140px;
+            background-color: #efefef;
         }
     </style>
 </head>
@@ -186,7 +212,7 @@
         <aside
             class="navbar side-navbar navbar-vertical navbar-right navbar-expand-lg border border-lg-dark overflow-hidden mq-t">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-menu"
                     aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -195,7 +221,7 @@
 
                 </h1>
 
-                <div class="collapse navbar-collapse" id="sidebar-menu">
+                <div class="offcanvas offcanvas-start" id="sidebar-menu">
                     <ul class="side-navbar-nav navbar-nav pt-lg-3">
                         <li class="side-nav-item nav-item">
                             <a class="side-nav-link nav-link" href="transaction-history.php">
@@ -298,7 +324,7 @@
             <header class="navbar-expand-sm  w-100 border border-dark">
                 <div class="" id="navbar-menu">
                     <div class="navbar bg">
-                        <div class="d-flex w-100 align-items-center justify-content-between px-5 py-3">
+                        <div class="store-manager-header-bottombar d-flex w-100 align-items-center justify-content-between px-5 py-3">
                             <div class="d-flex gap-5 align-items-center justify-content-center">
                             <button class="bg-white border-0 rounded py-2 px-4" style="font-family: Noto Sans Hebrew;
                                                                                         font-size: 20px;

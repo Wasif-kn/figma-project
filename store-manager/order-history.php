@@ -89,6 +89,34 @@
 		font-weight: 600;
 	}
 
+
+	@media screen and (max-width: 1200px) {
+
+		.order-management-cards {
+			width: 48%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+
+		.order-management-cards {
+			width: 100%;
+		}
+
+		.store-management-order-history-footer {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.store-management-order-history-footer span {
+			width: 100% !important;
+		}
+
+		.store-management-order-history-footer span a {
+			text-align: center !important;
+		}
+	}
+
 	@media screen and (max-width: 480px) {
 		.order-management-cards {
 			width: 100%;
@@ -575,18 +603,19 @@
 		<div class="container p-0">
 			<div class="card-x">
 				<div class="card-body my-3 bg-black rounded-3 p-2">
-					<div class="p-3 d-flex">
+					<div class="store-management-order-history-footer p-3 d-flex">
 						<span class="w-25">
 							<a class="page-link" href="#" tabindex="-1" aria-disabled="true">
 								<div class="page-item-subtitle text-white mx-4" style="font-size: 20px">
-								סה”כ חובות: 150,000 ₪ 								</div>
+									סה”כ חובות: 150,000 ₪ </div>
 							</a>
 						</span>
 
 						<span class="w-75">
 							<a class="page-link" href="#" style="text-align: right;">
 								<div class="page-item-title text-white mx-4" style="font-size: 20px">
-								סך הפריטים שהוזמנו: 	חולצות: 1,850 יח’	חפתים: 450 יח’  	גרביים: 350 יח’ 	עניבות: 850 יח’ 								</div>
+									סך הפריטים שהוזמנו: חולצות: 1,850 יח’ חפתים: 450 יח’ גרביים: 350 יח’ עניבות: 850 יח’
+								</div>
 							</a>
 						</span>
 					</div>

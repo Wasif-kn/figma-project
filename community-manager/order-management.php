@@ -89,6 +89,34 @@
 		font-weight: 600;
 	}
 
+	@media screen and (max-width: 1120px) {
+		.order-management-cards {
+			width: 48%;
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+		.order-management-cards {
+			width: 100%;
+		}
+
+		.order-management-footer {
+			flex-direction: column;
+		}
+
+		.order-management-footer span {
+			width: 100% !important;
+		}
+
+		.order-management-footer span div {
+			text-align: center;
+			margin: 6px;
+		}
+
+	}
+
+
 	@media screen and (max-width: 480px) {
 		.order-management-cards {
 			width: 100%;
@@ -245,7 +273,7 @@
 
 		<div class="card order-management-cards col-xl-4 rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -300,7 +328,7 @@
 
 		<div class="card  order-management-cards col-xl-4 rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -355,7 +383,7 @@
 
 		<div class="card col-xl-4 order-management-cards rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -407,7 +435,7 @@
 		</div>
 		<div class="card col-xl-4 order-management-cards rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -461,7 +489,7 @@
 		</div>
 		<div class="card col-xl-4 order-management-cards rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -516,7 +544,7 @@
 
 		<div class="card col-xl-4 order-management-cards rounded-3">
 			<!-- Photo -->
-			<div class="" style=""><img src="media/inviting-logo-2.png"
+			<div class="" style=""><img src="media/inviting-logo.png"
 					style="object-fit: cover; width: 100%; height: 130px;" alt=""></div>
 
 			<div class="card-body px-3">
@@ -575,18 +603,19 @@
 		<div class="container p-0">
 			<div class="card-x">
 				<div class="card-body my-3 bg-black rounded-3 p-2">
-					<div class="p-3 d-flex">
+					<div class="order-management-footer p-3 d-flex">
 						<span class="w-25">
 							<a class="page-link" href="#" tabindex="-1" aria-disabled="true">
 								<div class="page-item-subtitle text-white mx-4" style="font-size: 20px">
-								סה”כ חובות: 150,000 ₪ 								</div>
+									סה”כ חובות: 150,000 ₪ </div>
 							</a>
 						</span>
 
 						<span class="w-75">
 							<a class="page-link" href="#" style="text-align: right;">
 								<div class="page-item-title text-white mx-4" style="font-size: 20px">
-								סך הפריטים שהוזמנו: 	חולצות: 1,850 יח’	חפתים: 450 יח’  	גרביים: 350 יח’ 	עניבות: 850 יח’ 								</div>
+									סך הפריטים שהוזמנו: חולצות: 1,850 יח’ חפתים: 450 יח’ גרביים: 350 יח’ עניבות: 850 יח’
+								</div>
 							</a>
 						</span>
 					</div>

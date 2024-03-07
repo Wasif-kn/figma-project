@@ -39,21 +39,7 @@
     }
 
     .store-management-card {
-        width: 46%;
-    }
-
-    .ts-text {
-        text-align: right;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .btn-dark {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: right;
+        width: 45%;
     }
 
     @media screen and (max-width: 480px) {
@@ -69,15 +55,45 @@
             width: 100%;
         }
 
+    }
 
-        .store-management-information tr td {
-            font-size: 16px;
+
+    @media screen and (max-width: 1050px) {
+        .store-management-card {
+            width: 100%;
         }
+    }
 
-        .btn-dark {
-            font-size: 17px;
-        }
+    #store-search {
+        direction: rtl;
+        width: 100%;
+        border: none;
+    }
 
+    #store-search:focus,
+    #store-search:active,
+    #store-search: {
+
+        border: none !important;
+    }
+
+
+    #store-search::placeholder {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: right;
+
+    }
+
+    .ts-text {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        direction: rtl;
+    }
+
+    .store-management-information table td{
+        direction: rtl;
     }
 </style>
 
@@ -126,61 +142,57 @@
 
         </div>
     </div> -->
-<div class="container">
-    <div
-        class="row row-cards justify-content-sm-around gap-sm-3 gap-3 gap-lg-0 justify-content-lg-center bg-black px-2 py-3 m-0 rounded-3">
-        <div class="col-sm-5 col-lg-4 m-0">
-            <div class="card card-sm">
-                <div class="card-body-rounded p-1 m-1">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <span
-                                class="bg-white text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M41.6296 39.0368L31.225 28.6322C33.566 25.7105 34.8389 22.0769 34.833 18.333C34.833 9.22043 27.446 1.83301 18.333 1.83301C9.22042 1.83301 1.83301 9.22043 1.83301 18.333C1.83301 27.4456 9.22042 34.833 18.333 34.833C22.2288 34.833 25.8093 33.4828 28.6322 31.2246L39.0368 41.6292C39.2069 41.7997 39.4089 41.9349 39.6313 42.0271C39.8538 42.1193 40.0922 42.1666 40.333 42.1663C40.6956 42.1664 41.05 42.0589 41.3515 41.8574C41.653 41.656 41.888 41.3697 42.0268 41.0348C42.1656 40.6998 42.2019 40.3312 42.1312 39.9756C42.0605 39.6199 41.886 39.2933 41.6296 39.0368ZM18.333 31.1663C11.2453 31.1663 5.49967 25.4207 5.49967 18.333C5.49967 11.2453 11.2453 5.49967 18.333 5.49967C25.4211 5.49967 31.1663 11.2453 31.1663 18.333C31.1663 25.4207 25.4211 31.1663 18.333 31.1663Z"
-                                        fill="#01051D" />
-                                </svg>
 
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div class="font-weight-medium ts-text"> ..חיפוש מוצרים</div>
-                        </div>
+<div
+    class="container m-auto row row-cards justify-content-sm-around gap-sm-3 gap-3 gap-lg-0 justify-content-lg-center bg-black px-2 py-3 m-0 rounded-3">
+    <div class="col-sm-5 col-lg-4 m-0">
+        <div class="card card-sm">
+            <div class="card-body-rounded p-1 m-1">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M41.7966 39.2038L31.392 28.7992C33.733 25.8775 35.0059 22.2439 35 18.5C35 9.38742 27.613 2 18.5 2C9.38742 2 2 9.38742 2 18.5C2 27.6126 9.38742 35 18.5 35C22.3958 35 25.9763 33.6498 28.7992 31.3915L39.2038 41.7962C39.3739 41.9667 39.5759 42.1019 39.7983 42.1941C40.0208 42.2863 40.2592 42.3336 40.5 42.3333C40.8626 42.3334 41.217 42.2258 41.5185 42.0244C41.82 41.823 42.055 41.5367 42.1938 41.2017C42.3326 40.8668 42.3689 40.4982 42.2982 40.1426C42.2275 39.7869 42.053 39.4603 41.7966 39.2038ZM18.5 31.3333C11.4123 31.3333 5.66667 25.5877 5.66667 18.5C5.66667 11.4123 11.4123 5.66667 18.5 5.66667C25.5881 5.66667 31.3333 11.4123 31.3333 18.5C31.3333 25.5877 25.5881 31.3333 18.5 31.3333Z"
+                                    fill="#01051D" />
+                            </svg>
+
+                        </span>
+                    </div>
+                    <div class="col">
+                        <input type="text" id="store-search" placeholder="חיפוש חנות ">
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="col-sm-5 col-lg-4 m-0">
-            <div class="card card-sm">
-                <div class="card-body-rounded p-1 m-1">
-                    <div class="row align-items-center">
-                        
-                        <div class="col">
-                            <div class="font-weight-medium text-center ts-text">סינון חנויות
-
-                            </div>
-                        </div>
+    </div>
+    <div class="col-sm-5 col-lg-4 m-0">
+        <div class="card card-sm">
+            <div class="card-body-rounded p-1 m-1">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="font-weight-medium ts-text"> חנויות שלא בהסדר</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-5 col-lg-4 m-0">
-            <div class="card card-sm">
-                <div class="card-body-rounded p-1 m-1">
-                    <div class="row align-items-center">
-                        
-                        <div class="col">
-                            <div class="font-weight-medium text-center ts-text">סינון מוצרים</div>
-                        </div>
+    </div>
+    <div class="col-sm-5 col-lg-4 m-0">
+        <div class="card card-sm">
+            <div class="card-body-rounded p-1 m-1">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="font-weight-medium ts-text">חנויות  בהסדר</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
 
 
 
@@ -198,9 +210,9 @@
 
                             <tr class="d-flex flex-column gap-2 text-center">
 
-                                <td><strong>שם הת”ת: </strong>ישיבה בוחר</td>
-                                <td><strong>כמות בחורים: </strong>250</td>
-                                <td><strong>סך הזמנות: </strong>25,450 ₪</td>
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
 
                             </tr>
 
@@ -208,16 +220,14 @@
                     </div>
 
                 </div>
-                <a href="" class="btn btn-dark p-3">← לצירוף הת”ת </a>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
             </div>
 
             <div class="w-35"
-                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/coupon-image.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
             </div>
 
         </div>
-
-        
 
     </div>
 
@@ -232,9 +242,9 @@
 
                             <tr class="d-flex flex-column gap-2 text-center">
 
-                                <td><strong>שם הת”ת: </strong>ישיבה בוחר</td>
-                                <td><strong>כמות בחורים: </strong>250</td>
-                                <td><strong>סך הזמנות: </strong>25,450 ₪</td>
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
 
                             </tr>
 
@@ -242,16 +252,80 @@
                     </div>
 
                 </div>
-                <a href="" class="btn btn-dark p-3">← לצירוף הת”ת </a>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
             </div>
 
             <div class="w-35"
-                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/coupon-image.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
             </div>
 
         </div>
 
-        
+    </div>
+
+
+    <div class="store-management-card card col-xl-4 rounded-3 p-0">
+        <!-- Photo -->
+        <div class="card-body d-flex p-0">
+
+            <div class="d-flex flex-column px-5 py-4" style="width: 65%;">
+                <div class="store-management-information rounded-3">
+                    <div class="row-1 p-2 d-flex align-items-center justify-content-end">
+                        <table>
+
+                            <tr class="d-flex flex-column gap-2 text-center">
+
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
+
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
+            </div>
+
+            <div class="w-35 "
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="store-management-card card col-xl-4 rounded-3 p-0">
+        <!-- Photo -->
+        <div class="card-body d-flex p-0">
+
+            <div class="d-flex flex-column px-5 py-4" style="width: 65%;">
+                <div class="store-management-information rounded-3">
+                    <div class="row-1 p-2 d-flex align-items-center justify-content-end">
+                        <table>
+
+                            <tr class="d-flex flex-column gap-2 text-center">
+
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
+
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
+            </div>
+
+            <div class="w-35 "
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            </div>
+
+        </div>
 
     </div>
 
@@ -266,9 +340,9 @@
 
                             <tr class="d-flex flex-column gap-2 text-center">
 
-                                <td><strong>שם הת”ת: </strong>ישיבה בוחר</td>
-                                <td><strong>כמות בחורים: </strong>250</td>
-                                <td><strong>סך הזמנות: </strong>25,450 ₪</td>
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
 
                             </tr>
 
@@ -276,16 +350,14 @@
                     </div>
 
                 </div>
-                <a href="" class="btn btn-dark p-3">← לצירוף הת”ת </a>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
             </div>
 
-            <div class="w-35"
-                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/coupon-image.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <div class="w-35 "
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
             </div>
 
         </div>
-
-        
 
     </div>
 
@@ -300,9 +372,9 @@
 
                             <tr class="d-flex flex-column gap-2 text-center">
 
-                                <td><strong>שם הת”ת: </strong>ישיבה בוחר</td>
-                                <td><strong>כמות בחורים: </strong>250</td>
-                                <td><strong>סך הזמנות: </strong>25,450 ₪</td>
+                                <td><strong>שם החנות: </strong>בגיר</td>
+                                <td><strong>כמות הזמנות: </strong>15</td>
+                                <td><strong>סך הזמנות: </strong> 45,454 ₪</td>
 
                             </tr>
 
@@ -310,21 +382,16 @@
                     </div>
 
                 </div>
-                <a href="" class="btn btn-dark p-3">← לצירוף הת”ת </a>
+                <a href="" class="btn btn-dark">← להסדרים וחובות</a>
             </div>
 
-            <div class="w-35"
-                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/coupon-image.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <div class="w-35 "
+                style="border-top-right-radius: 8px; border-bottom-right-radius: 8px; width: 35%; background-image: url(media/inviting-logo.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
             </div>
 
         </div>
 
-        
-
     </div>
-
-
-
 </div>
 
 <?php include 'footer.php'; ?>

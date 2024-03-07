@@ -23,7 +23,7 @@
       }
 
       .ts-date {
-        width: 25%;
+        width: 20%;
       }
       .ts-product {
         width: 25%;
@@ -32,12 +32,18 @@
         width: 20%;
       }
       .ts-guy-name {
-        width: 15%;
+        width: 24%;
       }
       .ts-text {
         text-align: right;
         font-size: 20px;
         font-weight: 600;
+      }
+
+      .store-manager-transaction-history-table tr{
+        display: flex;
+        flex-direction: row-reverse;
+
       }
       @media screen and (max-width: 775px) {
         .ts-price {
@@ -61,6 +67,8 @@
           width: 875px;
         }
       }
+
+      
   </style>
     <div class="container p-0">
       
@@ -179,8 +187,8 @@
             </div>
           </div>
         </div>
-        <div class="card-x mt-3">
-          <div style="overflow-x: auto">
+        <div class="card-x mt-3 store-manager-transaction-history-table">
+          <div style="overflow-x: auto; direction: rtl;">
             <table class="table table-vcenter card-table">
               <tbody class="d-flex flex-column ts-text">
                 <tr>

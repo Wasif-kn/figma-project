@@ -99,6 +99,12 @@
                 width: 20% !important;
                 background-color: #EFEFEF !important;
             }
+            .user-welcome{
+                font-size: 16px;
+            }
+
+            
+      
 
         }
 
@@ -114,6 +120,10 @@
                 top: -60px !important;
                 position: relative;
             }
+
+            .header-lower-bar {
+            direction: rtl;
+        }
         }
 
         .logout-button {
@@ -132,6 +142,11 @@
             text-align: right;
             margin: 0;
         }
+        .offcanvas.show:not(.hiding), .offcanvas.showing{
+            padding-top: 140px;
+            background-color: #efefef;
+        }
+
     </style>
 </head>
 
@@ -186,7 +201,7 @@
         <aside
             class="navbar side-navbar navbar-vertical navbar-right navbar-expand-lg border border-lg-dark overflow-hidden mq-t">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-menu"
                     aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -195,7 +210,7 @@
 
                 </h1>
 
-                <div class="collapse navbar-collapse" id="sidebar-menu">
+                <div class="offcanvas offcanvas-start" id="sidebar-menu">
                     <ul class="side-navbar-nav navbar-nav pt-lg-3">
                         <li class="side-nav-item nav-item">
                             <a class="side-nav-link nav-link" href="index.php">
@@ -360,7 +375,7 @@
             <header class="navbar-expand-sm  w-100 border border-dark">
                 <div class="" id="navbar-menu">
                     <div class="navbar bg">
-                        <div class="container-xl bg ms-lg-0 ms-6">
+                        <div class="header-lower-bar container-xl bg ms-lg-0 ms-6">
                             <button class="bg-white border-0 rounded py-2 px-4">
                                 <svg width="34" height="39" viewBox="0 0 34 39" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

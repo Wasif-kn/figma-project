@@ -8,6 +8,8 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        direction: rtl;
+    flex-direction: row-reverse;
       }
       .button-open {
         color: white;
@@ -57,25 +59,49 @@
         background-color: #efefef;
         padding-top: 45px;
         border-radius: 0.57rem;
+        direction: rtl;
       }
 
       .page-wrapper{
         background-color: white !important;
       }
+      
       @media screen and (max-width: 990px) {
+
+        .button-op-cl{
+          flex-wrap: wrap;
+        }
      .content{
-      width: 500px;
-      margin-bottom:38px;
+      width: 32%;
         justify-content: center;
      }
      .button-close {
       width: 40px;
+      height: 40px;
+
       }
       .button-open {
-       width: 550px;
+       width: 32%;
       }
         
       }
+
+
+      @media screen and (max-width: 600px) {
+
+.content{
+  text-align: center;
+width: 47%;
+}
+
+.button-open {
+width: 47%;
+}
+.button-op-cl{
+  justify-content: center;
+}
+
+} 
           </style>
             <div class="container-xl">
               <div class="container col-12">

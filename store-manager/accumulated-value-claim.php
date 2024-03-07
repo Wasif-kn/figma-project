@@ -37,14 +37,14 @@
         }
 
         .box-detailss {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-        }
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 62%;
+}
 
         .left-span {
-            margin-left: 58px;
             font-size: 28px;
         }
 
@@ -56,10 +56,9 @@
 
         .line {
             position: absolute;
-            margin-top: 41px;
-            left: calc(50% - 38%);
-            border-bottom: 1.5px solid black;
-            width: 76%;
+    margin-top: 41px;
+    border-bottom: 1.5px solid black;
+    width: 100%;
         }
 
         .box-sub {
@@ -140,11 +139,28 @@
             margin: 0;
         }
 
+        input::placeholder{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: right;
+        }
+
+
+
+        input:focus{
+            border: none;
+        }
+
+        
+        input:active{
+            border: none;
+        }
 
         /* resonsive  */
 
         @media screen and (min-width: 979px) {
-
 
             .box-sub {
                 width: 362px;
@@ -281,7 +297,6 @@
             }
 
             .left-span {
-                margin-left: 58px;
                 font-size: 25px;
             }
 
@@ -292,6 +307,15 @@
             }
 
            
+        }
+
+        .date-details h3{
+font-size: 20px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: right;
+
         }
     </style>
         <!-- title -->
@@ -304,7 +328,7 @@
             <div class="box mt-6">
                 <div class="box-detailss">
                     <span class="left-span">₪</span>
-                    <span class="right-span">הזן את הסכום הרצוי</span>
+                    <input type="text" style="direction: rtl; border: none; width: 80%;" placeholder="הזן את הסכום הרצוי">
                     <div class="line"></div>
                 </div>
                 <a href="" style="font-family: Noto Sans Hebrew;
@@ -320,8 +344,10 @@
         <div class="mt-4">
             <div class="box-date">
                 <div class="d-flex date-details">
-                    <h3>תאריך: 24/07/2023</h3>
-                    <h3>סכום: 250 ₪</h3>
+                    <h3>24/07/2023 <span class="bold-text">:תאריך </span></h3>
+                    <h3>₪ 250 <span class="bold-text">:סכום</span></h3>
+                    <h3>ערך צבור <span class="bold-text">: סוג העסקה</span></h3>
+
                     <h3>סוג העסקה: ערך צבור</h3>
                 </div>
             </div>
